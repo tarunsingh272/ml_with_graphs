@@ -1,0 +1,28 @@
+[project]
+name = "graph-ml"
+version = "0.1.0"
+description = "GNN + KG"
+authors = [
+    {name = "singh.tarun.27.pisces@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "networkx (>=3.4.2,<4.0.0)",
+    "numpy (>=2.2.3,<3.0.0)",
+    "scipy (>=1.15.2,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.10"
+pytest = "^8.3.5"
+black = "^25.1.0"
+
